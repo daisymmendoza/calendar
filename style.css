@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(88, 99, 119);
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.month {
+    background-color: rgb(124, 156, 192);
+    color: white;
+    width: 50%;
+    margin-top: 2%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 7px;
+}
+
+h1 {
+    font-size: 2rem;
+    padding: 5%;
+    margin-bottom: -2%;
+}
+
+.calBody {
+    display: grid;
+    background-color: white;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.calWeekDays {
+    background-color: rgb(145, 168, 194);
+    display: grid;
+    padding: 2.5%;
+    grid-template-columns: repeat(7, 1fr);
+    color: white;
+    font-size: 1.5rem;
+}
+
+.calMonthDays {
+    display: grid;
+    padding: 1%;
+    grid-template-columns: repeat(7, 1fr);
+    color: black;
+    font-size: 1.5rem;
+}
+
+.prev-date, .next-date { /* Change class name */
+    opacity: 0.5;
+}
+
+.dayNums {
+    padding: 20%;
+}
+
+.calBtns {
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.prevBtn, .nextBtn {
+    background-color: rgb(124, 156, 192);
+    width: 160%;
+    margin-top: 50%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.7rem;
+}
+
+.nextBtn {
+    margin-left: -60%;
+}
+
+.prevBtn:hover {
+    cursor: pointer;
+}
+
+
+.nextBtn:hover {
+    cursor: pointer;
+}
